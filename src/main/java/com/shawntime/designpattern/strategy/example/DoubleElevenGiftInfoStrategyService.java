@@ -16,4 +16,9 @@ public class DoubleElevenGiftInfoStrategyService implements IGiftInfoStrategySer
         giftInfo.setGiftName("空气净化器");
         return giftInfo;
     }
+
+    @Override
+    public int typeId() {
+        return 1;
+    }
 }

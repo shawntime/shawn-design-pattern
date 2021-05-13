@@ -23,7 +23,7 @@ public class SummerBuyDayGiftInfoStrategyService implements IGiftInfoStrategySer
         GiftInfo giftInfo = new GiftInfo();
         giftInfo.setGiftId(1);
         giftInfo.setGiftName("铁锅三件套");
-        giftInfoMapper.getGiftInfoByActivityId(activityId)
+        giftInfoMapper.getGiftInfoByActivityId(activityId);
         return giftInfo;
     }
 }

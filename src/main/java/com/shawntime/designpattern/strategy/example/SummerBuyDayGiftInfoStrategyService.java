@@ -1,7 +1,5 @@
 package com.shawntime.designpattern.strategy.example;
 
-import javax.annotation.Resource;
-
 import org.springframework.stereotype.Service;
 
 /**
@@ -10,15 +8,18 @@ import org.springframework.stereotype.Service;
 @Service
 public class SummerBuyDayGiftInfoStrategyService implements IGiftInfoStrategyService {
 
-    @Resource
-    private GiftInfoMapper giftInfoMapper;
-    
+
+    @Override
     public GiftInfo getGiftInfo(int activityId) {
         // 从数据库中查询
         GiftInfo giftInfo = new GiftInfo();
         giftInfo.setGiftId(1);
         giftInfo.setGiftName("铁锅三件套");
-        giftInfoMapper.getGiftInfoByActivityId(activityId)
         return giftInfo;
+    }
+
+    @Override
+    public int typeId() {
+        return 2;
     }
 }

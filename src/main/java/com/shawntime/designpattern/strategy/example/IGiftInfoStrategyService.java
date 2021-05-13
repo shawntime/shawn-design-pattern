@@ -6,4 +6,6 @@ package com.shawntime.designpattern.strategy.example;
 public interface IGiftInfoStrategyService {
 
     GiftInfo getGiftInfo(int activityId);
+
+    int typeId();
 }
